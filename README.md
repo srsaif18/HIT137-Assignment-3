@@ -1,114 +1,77 @@
-# HIT137 Group Assignment 3
-
-## Python Image Editor using Tkinter & OpenCV
-
----
-
-### Unit
-
-**HIT137 – Object-Oriented Programming**
-
-### Assignment
-
-**Group Assignment 3 (30%)**
-
-### Institution
-
-**Charles Darwin University**
-
----
-
-## Group Members
-
-| Name                  | Student ID |
-| --------------------- | ---------- |
-| Mou Rani Biswas       | 398778     |
-| MD Saifur Rahman      | 398921     |
-| Nahid Hasan Sangram   | 395231     |
-| Mohammed Rifatul Alam | 399533     |
-
----
+# Image Editor Desktop Application  
+**HIT137 – Group Assignment 3**
 
 ## Project Overview
+This project is a **desktop-based Image Editor application** developed using **Python**, **Tkinter**, and **OpenCV**.  
+It demonstrates the use of **Object-Oriented Programming (OOP)** concepts, **Graphical User Interface (GUI)** design, and **image processing techniques**.
 
-This project is a **desktop-based image editing application** developed in Python as part of **HIT137 Group Assignment 3**.  
-The application demonstrates practical understanding of:
-
-- **Object-Oriented Programming (OOP) principles**
-- **GUI development using Tkinter**
-- **Image processing using OpenCV**
-- **Collaborative development using GitHub**
-
-The system allows users to open, edit, preview, undo/redo, and save images using a clean and user-friendly graphical interface.
+The application allows users to load an image and apply various image processing operations through an interactive graphical interface.
 
 ---
 
-## Key Learning Outcomes Demonstrated
-
-- Proper application of **encapsulation, constructors, methods, and class interaction**
-- Use of **multiple well-structured classes**
-- Integration of **OpenCV image processing** within a Tkinter GUI
-- Implementation of **Undo/Redo functionality**
-- Effective **GitHub collaboration with commit history from all group members**
+## Objectives
+- Demonstrate understanding of **OOP principles**
+- Build a functional **Tkinter GUI**
+- Apply **image processing operations using OpenCV**
+- Design a user-friendly and interactive desktop application
 
 ---
 
-## Application Features
-
-### File Management
-
-- Open image files (JPG, PNG, BMP)
-- Save image
-- Save image as a new file
-- Exit confirmation dialog
-
-### Edit Features
-
-- Undo last operation
-- Redo previously undone operation
-
-### Image Processing (OpenCV – All Required Filters)
-
-1. Grayscale conversion
-2. Gaussian blur (adjustable intensity)
-3. Edge detection using Canny algorithm
-4. Brightness adjustment
-5. Contrast adjustment
-6. Image rotation (90°, 180°, 270°)
-7. Image flip (horizontal and vertical)
-8. Image resize / scaling
-
-### GUI Components
-
-- Main application window with title
-- Menu bar (File & Edit menus)
-- Image display area (canvas)
-- Control panel with buttons and sliders
-- Status bar displaying image information (filename and dimensions)
-- Message boxes for errors and confirmations
+## Technologies Used
+- **Python 3**
+- **Tkinter** – GUI development
+- **OpenCV (cv2)** – Image processing
+- **Pillow (PIL)** – Image rendering in Tkinter
 
 ---
 
-## Object-Oriented Design
+## 📸 Features Implemented
 
-The application follows a **clear OOP architecture** using multiple interacting classes:
-
-### Main Classes
-
-- **ImageEditorGUI**  
-  Handles the Tkinter user interface, user interactions, and event handling.
-
-- **ImageProcessor**  
-  Implements all OpenCV-based image processing operations.
-
-- **ImageIO**  
-  Manages image loading and saving using file dialogs.
-
-- **HistoryManager**  
-  Maintains undo and redo stacks for non-destructive editing.
-
-This structure ensures **modularity, readability, maintainability, and scalability**.
+### Image Processing Features (OpenCV)
+- ✅ Grayscale Conversion
+- ✅ Gaussian Blur (Adjustable Intensity)
+- ✅ Edge Detection (Canny Algorithm)
+- ✅ Brightness Adjustment (Slider)
+- ✅ Contrast Adjustment (Slider)
+- ✅ Image Rotation (90°, 180°, 270°)
+- ✅ Image Flip (Horizontal & Vertical)
+- ✅ Resize / Scale Image (Slider)
+- ✅ Restore Original Image
 
 ---
 
-## Project Structure
+### GUI Features (Tkinter)
+- Main application window
+- Scrollable control panel
+- Image display area
+- Menu bar (File → Open, Save As, Exit)
+- Buttons and sliders for image effects
+- Status bar for user feedback
+- File dialogs for opening and saving images
+- Error handling using message boxes
+
+---
+
+## Object-Oriented Programming (OOP)
+The project uses multiple classes to demonstrate OOP concepts:
+
+| Concept | Implementation |
+|------|----------------|
+| Encapsulation | Image processing logic inside `ImageProcessor` |
+| Constructor | Used in all classes (`__init__`) |
+| Methods | Image operations like blur, rotate, resize |
+| Class Interaction | GUI interacts with ImageProcessor |
+| Modularity | Separate files for GUI, processing, utilities |
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Install Dependencies
+```bash
+pip install opencv-python pillow
+
+### How to run application
+```bash
+python main.py
+
